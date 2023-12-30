@@ -1,4 +1,5 @@
 .card{
+   
     max-width: 408px;
     height: 264px;
     border-radius: 12.474px;
@@ -50,14 +51,19 @@
   }
 
   .half-circle{
+   
    margin-top: -20px;
    position: relative;
+   img{
+    width: 100%;
+   }
   }
   
   .half-circle::before{
     content: '';
     position: absolute;
-    left: -25px;
+    overflow: hidden;
+    left: -13px;
     width: 24px;
     height: 27.077px;
     border-radius: 0 12rem 12rem 0;
@@ -67,7 +73,8 @@
   .half-circle::after{
     content: '';
     position: absolute;
-    right: -17px;
+    overflow: hidden;
+    right: -13px;
     width: 24px;
     height: 27.077px;
     border-radius: 12rem 0 0 12rem;
@@ -109,16 +116,18 @@
   background-color: #1E1B39;
   color: #E5E5EF;
 }
-$vector-count: 6; // Number of Vector images
-
-.Vector {
+$vector-count: 6; 
+.Vectorp{
   position: absolute;
- width: 100%;
- height: 100%;
-  // Loop to set the top position for each image
+  width: 100%;
+  height: 100%;
+}
+.Vector {
+ 
+  
   @for $i from 1 through $vector-count {
     &:nth-child(#{$i}) {
-      top: #{($i - 1) * 30}px; // Set the top position based on the index
+      top: #{($i - 1) * 30}px; 
     }
   }
 }

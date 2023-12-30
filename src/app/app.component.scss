@@ -2,10 +2,20 @@
 /*     padding-top: 75px;
     padding-left: 33px;
     padding-right: 130px; */
-    padding: 75px 130px 0px 33px;
+    padding: 75px 120px 0px 33px;
  }
- @media only screen and (max-width: 500px) {
+ @media only screen and (max-width: 700px) {
     .main{
+        padding: 75px 33px;
+    }
+  }
+ @media only screen and (max-width: 350px) {
+    .main{
+        padding: 75px 0px;
+    }
+  }
+  @media (orientation: portrait) {
+    .main {
         padding: 75px 33px;
     }
   }
@@ -39,6 +49,7 @@
         width: 32px;
         height: 32px;
         border-radius: 8px;
+        border: none;
         background: #E7EAED;
         display: flex;
         justify-content: center;
