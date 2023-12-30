@@ -1,0 +1,125 @@
+th{
+    text-align: center;
+    background-color:#E3E4E9 ;
+    color: #ABAAB1;
+    font-size: 0.82994rem;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+td{
+    text-align: center;
+    color: #1C1C28;
+    
+    font-size: 0.82994rem;
+    font-style: normal;
+    font-weight: 400;
+ 
+}
+ .pdf{
+    height: 0px;
+    ::ng-deep .p-button {
+        width: 31.667px;
+        height: 31.667px;
+        padding: 11.215px;
+        border-radius: 7.917px;
+        background: rgba(138, 116, 249, 0.10);
+        justify-content: center;
+        align-items: center;
+        gap: 6.597px;
+        flex-shrink: 0;
+        border: 1px solid #92A1AD66;
+    }
+    img{
+        cursor: pointer;
+    }
+    h4{
+        color: black;
+        text-align: right;
+         
+        font-size: 0.72919rem;
+         
+        font-weight: 400;
+        line-height: 150%;
+        span{
+            color: rgba(0, 0, 0, 0.40);
+            font-family: Inter;
+            font-size: 0.625rem;
+            font-weight: 500;
+             
+        }  
+    }
+ }
+ .customer-id{
+color: #898995;
+font-family: "Inter";
+font-size: 0.82994rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.45238rem; 
+ }
+ .profile{
+    
+    img{
+        width: 29.877px;
+        height: 29.877px;
+        border-radius: 50%;
+    }
+    p{
+        color: #92A1AD;
+        font-family: Poppins;
+        font-size: 9.959px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0;
+    }
+    h3{
+        
+        color: #000000;
+        
+        font-size: 11.619px;
+        font-style: normal;
+        font-weight: 400;
+        
+    }
+ }
+ :host ::ng-deep.p-paginator {
+    
+    display: flex;
+    align-items: center;
+    color: var(--Gray-Gray-600, #7E8299);
+text-align: center;
+
+font-family: Inter;
+font-size: 13.5px;
+font-style: normal;
+font-weight: 600;
+line-height: 13.5px; /* 100% */
+letter-spacing: -0.135px;
+    flex-wrap: wrap;
+    
+}
+:host ::ng-deep.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    width: 27px;
+    height: 27px;
+    color: #fff;
+    border-radius: 4.5px;
+    background: #8A74F9;
+    
+}
+:host ::ng-deep.p-paginator .p-paginator-pages .p-paginator-page {
+    width: 27px;
+    height: 27px;
+    border-radius: 4.5px;
+   
+  }
+  :host ::ng-deep  .p-dropdown-label {
+    margin-top: -4px;
+
+  } 
+  :host ::ng-deep  .p-dropdown {
+    height: 31.5px;
+    border-radius: 8px;
+    border-radius: 6px;
+border: 0.75px solid #DDD;
+  } 

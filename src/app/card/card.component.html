@@ -1,0 +1,61 @@
+<div class="col-fixed flex flex-column  align-items-center card" >
+   <img src="../assets/Vector.svg" class="Vector">
+   <img src="../assets/Vector.svg" class="Vector">
+   <img src="../assets/Vector.svg" class="Vector">
+   <img src="../assets/Vector.svg" class="Vector">
+   <img src="../assets/Vector.svg" class="Vector">
+    <h3 class="text-center py-2 card-text">
+        <span> <img class="trash" src="../assets/trash.svg" alt="trash" pTooltip="حذف" tooltipPosition="bottom" tooltipStyleClass="tooltipStyle"></span>
+        عرض التذكرة الخاصة بالفيلم</h3>
+
+
+    <div class="card-link">
+        <div class="flex align-items-center">
+            <img class="CopyToClipboard" [cdkCopyToClipboard]="value" src="../assets/Group.svg" alt="">
+            <h3 class="clipboard">{{value}}</h3>
+        </div>
+
+
+    </div>
+    <p  class="text-center py-3 card-date">فعال حتي 15 يوليو 2023</p>
+
+    <div class="half-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="382" height="4" viewBox="0 0 382 4" fill="none">
+            <path d="M2 2.00009L380.378 2.00009" stroke="white" stroke-opacity="0.4" stroke-width="2.4948" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5.82 5.82"/>
+            </svg>
+    </div>
+
+
+        <div class="flex justify-content-between align-items-center py-2 px-5" style="width: 100%;">
+
+            <div class="qrcodeImage">
+                <qrcode
+                  [qrdata]="'https://atechnologies.info/'"
+                  [allowEmptyString]="true"
+                  [ariaLabel]="'QR Code image with the following content...'"
+                  [cssClass]="'center'"
+                  [colorDark]="'#000000ff'"
+                  [colorLight]="'#ffffffff'"
+                  [elementType]="'canvas'"
+                  [errorCorrectionLevel]="'M'"
+ 
+                  [margin]="2"
+                  [scale]="1"
+                  [title]="'A custom title attribute'"
+                  [width]="82"
+                ></qrcode>
+              </div>
+
+              <div>
+                <h3 class="discout text-right">خصم</h3>
+                <div class="flex align-items-center discout-div">
+                    <p-button [outlined]="true">
+                    <span style="margin-left: -12px;">مشاركة</span>
+                    <span class="flex"><img src="../assets/send-2.svg" alt=""></span>
+                    </p-button>
+                    <h3 class="discout-number">25% </h3>
+                </div>
+              </div>
+              
+        </div>
+</div>

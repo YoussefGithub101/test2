@@ -1,0 +1,48 @@
+.chart{
+    padding: 19px 22px 9px 22px;
+    background-color: #fff;
+    height: 264px;
+    border-radius: 8px;
+    border: 0.807px solid #EBEBEB;
+    
+    ::ng-deep  .p-dropdown-label {
+        color: #1C1C28;
+        margin-top: -5px;
+        font-size: 0.757rem;
+        font-style: normal;
+        font-weight: 400;
+          
+      } 
+    ::ng-deep  .p-dropdown {
+    /*         width: 67.371px;
+        height: 30.279px; */
+        border-radius: 8px;
+      } 
+}
+ 
+
+ 
+
+
+
+.Coupon{
+    h3{
+    color: #1C1C28;
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 0.8065rem; /* 92.173% */
+    }
+ 
+    p{
+        color: #99A1B7;
+        text-align: right;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 0.875rem; 
+        font-weight: 500;
+        line-height: 0.8065rem; /* 92.173% */
+    }
+}
+ 

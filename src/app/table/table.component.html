@@ -1,0 +1,61 @@
+<p-table
+    [value]="customer"
+    [paginator]="true"
+    
+    [rows]="4"
+    [totalRecords]="customer.length"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [rowsPerPageOptions]="[4, 8, 20]"
+    [showFirstLastIcon]="false"
+>
+    <ng-template pTemplate="header" >
+        <tr>
+            <th style="width:20%">التذكرة</th>
+            <th style="width:10%">عدد مرات الشراء</th>
+            <th style="width:10%">عدد الأشخاص</th>
+            <th style="width:27%">السينمات</th>
+            <th pSortableColumn="price" style="width:15%"> <p-sortIcon field="price"></p-sortIcon>قيمى التذكرة </th>
+            <th style="width:10%">رقم التذكرة</th>
+            <th style="width:12.50%">المستخدم</th>
+            <th style="width:5%">#</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-customer>
+        <tr>
+            <td >
+                <div class="flex align-items-center gap-4 pdf">
+                    <img src="../assets/Group 1000010390.svg">
+                    
+                    <div class="flex align-items-center gap-2">
+                        <h4>{{ customer.ticketNumPDF }} 
+                            <br> 
+                            <span>9mb . pdf</span>
+                        </h4>
+                    
+                    <p-button  [outlined]="true" severity="secondary"> <img src="../assets/ticket-2.svg" alt=""></p-button> 
+                    </div>
+                </div>
+            </td>
+            <td>{{ customer.NumOfPurchases }}</td>
+            <td>{{ customer.Numberofpeople }}</td>
+            <td pTooltip="{{(customer.location | truncate: 49).missingValue}}" tooltipPosition="top">
+                {{ (customer.location | truncate: 49).truncatedValue }} 
+            </td>
+            <td>${{ customer.price }}</td>
+            <td>{{ customer.ticketNum }}</td>
+            <!-- <td>{{ customer.phoneNumber }}</td> -->
+            <td class="flex align-items-center gap-2 profile ">
+              <div>
+                <h3>{{customer.name}}</h3>
+                <p>{{customer.phoneNumber}}</p>
+              </div>
+              <img src="{{customer.picture}}" alt="">
+            </td>
+            <td class="customer-id">{{ customer.id }}</td>
+        </tr>
+    </ng-template>
+ 
+    
+ 
+</p-table>
+ 

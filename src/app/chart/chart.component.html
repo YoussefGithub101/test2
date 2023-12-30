@@ -1,0 +1,18 @@
+<div class="chart">
+    <div class="chart-contant flex justify-content-between align-items-center">
+        <p-dropdown
+        class="dropdown" 
+        [options]="cities" 
+        
+        optionLabel="name"
+         [showClear]="false" 
+         placeholder="Select a City">
+        </p-dropdown>
+        <div class="Coupon">
+            <h3>إحصائيات إستخدام القسيمة</h3>
+            <p >05 يوليو , 2023 - 05 أغسطس , 2023</p>
+        </div>
+    </div>
+  
+    <app-chart-graph> </app-chart-graph>
+</div>

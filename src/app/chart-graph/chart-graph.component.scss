@@ -1,0 +1,35 @@
+#chart {
+    max-width: 792.571px;
+     
+     
+  }
+  ::ng-deep.apexcharts-tooltip {
+     
+     
+  }
+  ::ng-deep.arrow_box{
+    background-color: #1E1B39;
+    color: #E5E5EF;
+    padding: 10px;
+    padding-top: 15px;
+    direction: rtl;
+    line-height: 0px;
+    span{
+      color: var(--Neutral-Colors-500, #E5E5EF);
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Neo Sans Arabic;
+      font-size: 12.112px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 0px;
+    }
+    p{
+      color: #8A74F9;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Inter;
+      font-size: 8.074px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 0px;
+    }
+  }

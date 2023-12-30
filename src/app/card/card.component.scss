@@ -1,0 +1,124 @@
+.card{
+    max-width: 408px;
+    height: 264px;
+    border-radius: 12.474px;
+    background: var(--main-color);
+    position: relative;
+    
+  }
+  .trash{
+    position: absolute;
+    left: 32px;
+    cursor: pointer;
+  }
+  .card-text{
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFF
+  }
+  .card-link{
+    margin-top: -5px;
+    width: 226.195px;
+    height: 42px;
+    border-radius: 8.316px;
+    border: 0.832px dashed #DDD;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+  .clipboard{
+    color: #1C1C28; 
+    font-family: 'Inter';
+    font-size: 13px;
+    
+    font-weight: 500;
+    line-height: 23.285px;
+  }
+  .CopyToClipboard{
+    margin-right: 16.47px;
+    cursor: pointer;
+  }
+
+  .card-date{
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -5px;
+  }
+
+  .half-circle{
+   margin-top: -20px;
+   position: relative;
+  }
+  
+  .half-circle::before{
+    content: '';
+    position: absolute;
+    left: -25px;
+    width: 24px;
+    height: 27.077px;
+    border-radius: 0 12rem 12rem 0;
+    background-color: var(--bg-color);
+    z-index: 6;
+  }
+  .half-circle::after{
+    content: '';
+    position: absolute;
+    right: -17px;
+    width: 24px;
+    height: 27.077px;
+    border-radius: 12rem 0 0 12rem;
+    background-color: var(--bg-color);
+    z-index: 6;
+  }
+/* The div container */
+.discout{
+  color: #FFF;
+  font-size: 0.875rem;
+ 
+  font-weight: 400;
+ 
+}
+ 
+  ::ng-deep .p-button.p-button-outlined{
+    width: 70px;
+    height: 24px;
+    color: #ffffff ;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+     display: flex;
+  }
+ 
+.discout-div{
+  margin-top: -18px;
+  gap: 17px;
+  h3{
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 18px;
+  
+    font-weight: 500;
+   
+  }
+}
+::ng-deep .p-tooltip .p-tooltip-text {
+  background-color: #1E1B39;
+  color: #E5E5EF;
+}
+$vector-count: 6; // Number of Vector images
+
+.Vector {
+  position: absolute;
+ width: 100%;
+ height: 100%;
+  // Loop to set the top position for each image
+  @for $i from 1 through $vector-count {
+    &:nth-child(#{$i}) {
+      top: #{($i - 1) * 30}px; // Set the top position based on the index
+    }
+  }
+}

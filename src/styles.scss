@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-purple/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeflex/primeflex.css";
+@import "primeicons/primeicons.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/neo-sans-arabic');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+:root{
+    --bg-color:#F3F5F7;
+    --main-color:#8A74F9;
+    --font-color:#fff
+    --Font-color-Light:#99A1B7;
+    --primary-color: #8A74F9;
+}
+*{
+    font-family: 'Neo Sans Arabic', sans-serif;
+}
+body{
+    background-color: var(--bg-color);
+     
+}
+
+/* ::ng-deep.pi-step-backward:before {
+    content: "\e917";
+}
+::ng-deep.pi-step-forward:before {
+    content: "\e916";
+    }
+    
+    ::ng-deep.pi-caret-left:before {
+    content: "\e905";
+    }
+    
+    ::ng-deep.pi-caret-right:before {
+    content: "\e904";
+    } */
