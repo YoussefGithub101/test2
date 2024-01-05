@@ -38,7 +38,7 @@
             </td>
             <td>{{ customer.NumOfPurchases }}</td>
             <td>{{ customer.Numberofpeople }}</td>
-            <td pTooltip="{{(customer.location | truncate: 49).missingValue}}" tooltipPosition="top">
+            <td pTooltip="{{(customer.location | truncate: 49).missingValue}}" tooltipPosition="top" class="fix-dir">
                 {{ (customer.location | truncate: 49).truncatedValue }} 
             </td>
             <td>${{ customer.price }}</td>
